@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - Fitness Club</title>
+    <link rel="stylesheet" href="../CSS/contact.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Charmonman:wght@400;700&family=Marck+Script&family=Monofett&family=Piedra&family=Revalia&family=Spicy+Rice&family=Zen+Dots&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Fitness Club</h1>
+        <nav>
+          <ul>
+            <li><a href="../HTML/prj2.html">Home</a></li>
+            <li><a href="classes.html">Classes</a></li>
+            <li><a href="trainers.html">Trainers</a></li>
+            <li><a href="../HTML/about.html">About</a></li>
+            <li><a class="active" href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero-content" style="margin-top: 30px">
+            <h2>Contact Us</h2>
+            <p>
+              "Your questions, feedback, and ideas are the weights that help us
+              strengthen our services. Reach out to us today, and let's shape a
+              healthier future together!"
+            </p>
+            <div class="container2">
+              <p style="text-align: center">
+                If you have any questions or feedback, please feel free to get
+                in touch with us:
+              </p>
+              <br />
+              <div class="contact-form">
+                <form action="submit.php" method="post">
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name" required />
+
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required />
+
+                  <label for="message">Message:</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="4"
+                    required
+                  ></textarea>
+
+                  <button type="submit" class="btn">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
