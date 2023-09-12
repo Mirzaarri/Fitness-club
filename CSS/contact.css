@@ -196,11 +196,12 @@ textarea {
 }
 
   .hero {
-    
+      
       padding: 30rem 0; /* Adjust padding for smaller screens */
   }
 
   .hero-content {
+      width: 80%;
       top: 80%; /* Center hero content vertically */
   }
 

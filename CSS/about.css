@@ -128,6 +128,7 @@ nav a:hover {
   flex-direction: column;
   margin: 0px 90px;
   text-align: center;
+
 }
 
 .club-heading{
@@ -164,7 +165,7 @@ nav a:hover {
   row-gap: 50px;
   width: 100%;
   justify-content: space-around;
-  margin-left: 40px;
+  margin-left: 20px;
 }
 
 .mission-content p{
@@ -177,23 +178,23 @@ margin-top: 10px;
 
 .mission1{
 grid-area: mission1;
-width: 350px;
+width: 400px;
 
 }
 .mission2{
   grid-area: mission2; 
   
-width: 300px;
+width: 400px;
 }
 .mission3{
   grid-area: mission3; 
   
-width: 300px;
+width: 400px;
 }
 .mission4{
   grid-area: mission4;
   
-width: 300px;
+width: 400px;
 }
 
 /* Your existing CSS styles */
