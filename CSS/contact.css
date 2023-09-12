@@ -18,11 +18,12 @@ body {
 header {
   background-color: transparent; /* Set the background to transparent */
   color: #ffe600;
-  padding: 1rem 0;
   position: absolute; /* Position the header absolutely */
   width: 100%; /* Make it full-width */
   top: 0;
   left: 0;
+  position: fixed;
+  z-index: 999;
 }
 
 .container {
@@ -176,9 +177,6 @@ textarea {
 
 /* Media query for screens smaller than 800px */
 @media (max-width: 1300px) {
-  header {
-      padding: 0.5rem 0;
-  }
 
   .container {
       grid-template-columns: 1fr; /* Change to a single column layout */
@@ -238,9 +236,7 @@ textarea {
 }
 
 @media (max-width: 800px) {
-  header {
-      padding: 0.5rem 0;
-  }
+  
 
   .container {
       grid-template-columns: 1fr; /* Change to a single column layout */
@@ -293,4 +289,21 @@ textarea {
   .btn {
       padding: 8px 16px; /* Adjust button padding for smaller screens */
   }
+}
+
+.form-color{
+  color: #ffe600;
+  text-shadow: black 2px 2px 2px;
+}
+
+footer {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.scrolled {
+  background-color: rgba(0, 0, 0, 0.4) !important;
+
 }

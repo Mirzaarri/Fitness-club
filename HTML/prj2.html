@@ -16,7 +16,7 @@
   <body>
     <header>
       <div class="container">
-        <h1>Fitness Club</h1>
+        <h1 class="logo">Fitness Club</h1>
         <nav>
           <ul>
             <li><a class="active" href="../HTML/prj2.html">Home</a></li>
@@ -149,9 +149,22 @@
       </div>
     </section>
     <footer>
-      <div class="container">
+      <div class="footer">
         <p>&copy; 2023 Fitness Club</p>
       </div>
     </footer>
+
+
+    <script>
+      const header = document.querySelector("header");
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 0) {
+        header.classList.add("scrolled");
+    } else {
+        header.classList.remove("scrolled");
+    }
+});
+    </script>
   </body>
 </html>

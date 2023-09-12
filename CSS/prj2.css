@@ -19,11 +19,13 @@ body {
 header {
   background-color: transparent; /* Set the background to transparent */
   color: #ffe600;
-  padding: 1rem 0;
+  padding: 0.5rem 0;
   position: absolute; /* Position the header absolutely */
   width: 100%; /* Make it full-width */
   top: 0;
   left: 0;
+  position: fixed;
+  z-index: 999;
 }
 
 .container {
@@ -39,6 +41,9 @@ header {
 header h1 {
   font-size: 2.0rem;
 
+}
+.logo{
+  cursor: pointer;
 }
 
 nav ul {
@@ -181,15 +186,11 @@ footer {
 }
 /* Media queries for responsive design */
 @media screen and (max-width: 800px) {
-  header {
-    padding: 0.5rem 0; /* Reduce header padding for smaller screens */
-  }
 
   header h1 {
     font-size: 1.5rem; /* Reduce the font size of the header text */
   }
 
-  
   nav ul {
     justify-content: center; /* Center-align navigation links */
     padding-top: 10px;
@@ -324,3 +325,7 @@ nav a {
 }
 
 
+.scrolled {
+  background-color: rgba(0, 0, 0, 0.4) !important;
+
+}

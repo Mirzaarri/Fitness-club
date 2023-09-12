@@ -12,17 +12,20 @@ html {
 body {
   font-family: 'Zen Dots';
   line-height: 1.6;
+  background-color: rgb(219, 219, 219);
 }
 
 /* Style the header and navigation */
 header {
   background-color: transparent; /* Set the background to transparent */
   color: #ffe600;
-  padding: 1rem 0;
+  padding: 0.5rem 0;
   position: absolute; /* Position the header absolutely */
   width: 100%; /* Make it full-width */
   top: 0;
   left: 0;
+  position: fixed;
+  z-index: 999;
 }
 
 .container {
@@ -133,6 +136,7 @@ nav a:hover {
   justify-content: center;
   height: 300px;
   row-gap: 20px;
+  
 }
 
 .our-story{
@@ -196,10 +200,7 @@ width: 300px;
 
 /* Media query for screens smaller than 800px */
 @media (max-width: 800px) {
-  header {
-    padding: 0.5rem 0;
-}
-
+ 
 .container {
     grid-template-columns: 1fr; /* Change to a single column layout */
 }
@@ -246,6 +247,7 @@ nav a {
   .club-heading, .our-story{
       margin: 0 auto;
       max-width: 90%; /* Limit the width of these sections */
+      
   }
   .our-mission {
     display: flex;
@@ -277,4 +279,17 @@ nav a {
       width: 100%;
       margin-bottom: 20px;
   }
+}
+
+
+footer {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+
+.scrolled {
+  background-color: rgba(0, 0, 0, 0.4) !important; /* Adjust the alpha value as needed (0.0 to 1.0) */
 }
